@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Jogo da velha</title>
+    </head>
+    <body>
+        <header>
+            <h1>Jogo da velha</h1>
+        </header>
+        <section>
+            <h2 id="mensagem">Jogador 1, selecione um espaço para começar!</h2>
+            <div id="tabuleiro">
+                <div class="espaco"><button id="a1" onclick="marcarPosicao('a1')"></button></div>
+                <div class="espaco"><button id="a2" onclick="marcarPosicao('a2')"></button></div>
+                <div class="espaco"><button id="a3" onclick="marcarPosicao('a3')"></button></div>
+                <div class="espaco"><button id="b1" onclick="marcarPosicao('b1')"></button></div>
+                <div class="espaco"><button id="b2" onclick="marcarPosicao('b2')"></button></div>
+                <div class="espaco"><button id="b3" onclick="marcarPosicao('b3')"></button></div>
+                <div class="espaco"><button id="c1" onclick="marcarPosicao('c1')"></button></div>
+                <div class="espaco"><button id="c2" onclick="marcarPosicao('c2')"></button></div>
+                <div class="espaco"><button id="c3" onclick="marcarPosicao('c3')"></button></div>
+            </div>
+            <div id="reiniciar">
+                <button id="reiniciar-button">Reiniciar jogo</button>
+            </div>
+        </section>
+        <footer>
+            Desenvolvido alegremente por <a href="https://github.com/DanilloTC">Danillo Castro</a>
+        </footer>
+    </body>
+    <script src="./script.js"></script>
+</html>

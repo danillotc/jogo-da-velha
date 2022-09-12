@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    font-size: 36px;
+    --primary: rgb(240, 222, 59);
+    --secondary: rgb(3, 3, 92);
+}
+
+header {
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+section {
+    background: var(--primary);
+    height: calc(100vh - 3em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+h2 {
+    text-align: center;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template: repeat(3, 3em) / repeat(3, 3em);
+    gap: 2px;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid var(--secondary);
+    background-color: var(--secondary);
+}
+
+.espaco {
+    border: 1px solid var(--secondary);
+    background-color: var(--primary);
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    font-size: 2em;
+}
+
+#reiniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5em;
+}
+
+#reiniciar-button {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 15px;
+    font-size: 1em;
+    transition: .5s;
+    box-shadow: 2px 2px black;
+}
+
+#reiniciar-button:hover {
+    box-shadow: 0 0 10px blue;
+}
+
+footer {
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-size: 0.5em; 
+}
+
+a {
+    font-size: 1em; 
+    color: var(--primary);
+}
+
+@media screen and (max-width: 400px) {
+    * {
+        font-size: 24px;
+    }
+}
