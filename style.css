@@ -65,12 +65,7 @@ button {
     color: var(--primary);
     border-radius: 15px;
     font-size: 1em;
-    transition: .5s;
     box-shadow: 2px 2px black;
-}
-
-#reiniciar-button:hover {
-    box-shadow: 0 0 10px blue;
 }
 
 footer {
